@@ -1,6 +1,7 @@
 'use strict';
 
 const calcTotalFrequencyDrift = require('../lib/freq-drift/part1.js')
+const detectFirstRepeatedFrequency = require('../lib/freq-drift/part2.js')
 
 // https://mochajs.org/#assertions
 // const assert = require('assert')
@@ -15,5 +16,7 @@ describe('part1', () => {
 
 describe('part2', () => {
   // pending test
-  it('does stuff correctly')
+  it('detects first repeated frequency', () => {
+    expect(detectFirstRepeatedFrequency('./test/input-part1.txt')).to.equal(75108)
+  })
 })
