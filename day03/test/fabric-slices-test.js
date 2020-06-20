@@ -1,6 +1,7 @@
 'use strict';
 
 const {calcDisputedFabricSqIn, stakeClaim} = require('../lib/fabric-slices/part1.js')
+const findUndisputedFabricClaim = require('../lib/fabric-slices/part2.js')
 
 const expect = require('chai').expect
 
@@ -31,5 +32,11 @@ describe('part1', () => {
 
   it('calculates square inches of fabric covered by multiple claims', () => {
     expect(calcDisputedFabricSqIn('./test/input-part1.txt')).to.equal(117_505)
+  })
+})
+
+describe('part2', () => {
+  it('finds sole undisputed fabric claim', () => {
+    expect(findUndisputedFabricClaim('./test/input-part1.txt')).to.equal(1254)
   })
 })
