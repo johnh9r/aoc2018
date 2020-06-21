@@ -1,0 +1,18 @@
+{
+  "name": "polymers",
+  "version": "0.0.1",
+  "description": "alchemical reactions in long polymer chains",
+  "main": "index.js",
+  "repository": "https://github.com/johnh9r/aoc2018.git",
+  "author": "John Hagemeister",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  },
+  "scripts": {
+    "test": "mocha --timeout 0",
+    "test:debug": "echo 'chrome://inspect/#devices'; mocha --inspect-brk --timeout 0"
+  }
+}
