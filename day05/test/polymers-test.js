@@ -1,6 +1,7 @@
 'use strict';
 
 const {collapsePolymerChain, polymerToString} = require('../lib/polymers/part1.js')
+const calcMostCollapsiblePolymerChain = require('../lib/polymers/part2.js')
 
 const expect = require('chai').expect
 
@@ -12,5 +13,11 @@ describe('part1', () => {
 
   it('collapses polymer chain to minimum', () => {
     expect(collapsePolymerChain('./test/input-part1.txt')).to.equal(9_116)
+  })
+})
+
+describe('part2', () => {
+  it('finds shortest possible chain with certain unit eliminated', () => {
+    expect(calcMostCollapsiblePolymerChain('./test/input-part1.txt')).to.equal(6_890)
   })
 })
