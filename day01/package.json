@@ -12,7 +12,7 @@
     "mocha": "^8.0.1"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --timeout 0",
     "test:debug": "echo 'chrome://inspect/#devices'; mocha --inspect-brk --timeout 0"
   }
 }
